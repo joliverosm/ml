@@ -1,0 +1,467 @@
+/*----------Variables---------*/
+:root {
+    --azulML: #00C4CC;
+    --bgDark: #1C1B19;
+    --bgLight: #ECEBEB; /* F1F1F1 */
+    --bgCoral: #FA7268; 
+}
+
+/* --General Styles-- */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Caveat Brush', cursive;	
+}
+a:hover {
+    text-decoration-line: none;
+}
+.azul-ML {
+    color: var(--azulML);
+}
+.dark-ML {
+    color: var(--bgDark);
+}
+.coral-ML {
+    color: var(--bgCoral);
+}
+.cursive {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+.flex {
+    display: flex;
+    flex-direction: column; 
+}
+.text_center {
+    text-align: center;
+}
+.btn_outline_ML {
+    color: var(--azulML);
+    background-color: transparent;
+    background-image: none;
+    border-color: var(--azulML);
+}
+.btn_outline_ML:hover {
+    color: white;
+    background-color: var(--azulML);
+    border-color: var(--azulML);
+}
+
+/* --Navbar-- */
+nav.navbar {
+    background-color: transparent;
+    text-align: center;
+    transition: all 0.4s linear;
+}
+nav .container.big {
+    height: 6.8rem;
+    transition: all 0.4s linear;
+}
+.navbar-item img.full_logo {
+    max-height: 6.5rem;    
+}
+a.navbar-item {
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    padding: 0.625rem auto;
+    line-height: 1.5rem;
+    transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+}
+
+a.navbar-item:hover {
+    color: var(--azulML);
+    background-color: transparent;
+}
+.navbar-item span.cursive {
+    font-size: 1.25rem;
+}
+.navbar-item span:last-child {
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar-item img.mobile_logo {
+    max-height: 3rem;
+    transition: all 0.4s linear;
+}
+.navbar-burger {
+    color: white;
+}
+.navbar-burger:hover {
+    color: white;
+}
+
+/* **********Menu Scroll*********** */
+#menu.scroll .container.big {
+    height: 4rem;    
+}
+#menu.scroll {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#menu.scroll .navbar-item img.full_logo {
+    display: none;
+}
+/* **********Menu Scroll*********** */
+
+/* --Section-- */
+main {
+    overflow: hidden;
+}
+.home_main, .about_us, .about, .the_coffee, .coffee {
+    min-height: 100vh;
+}
+
+/* --Main Section-- */
+.home_main {
+    justify-content: flex-end;
+    background-image: url('../img/nevado.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    line-height: 1.2;    
+}
+.home_main_text > h2{
+    font-size: 5rem;
+}
+.text_title_1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+a.button {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 2rem;    
+}
+
+.scroll_icon {
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+/* --About Us Section-- */
+.about_us {    
+    background-image: url('../img/bg_dark_texture.jpg');
+    background-repeat: repeat;
+    text-align: center;
+    padding: 2rem auto;
+    position: relative;
+}
+.about {    
+    align-items: center;
+    justify-content: center;    
+}
+.w_7 {
+    max-width: 70%;
+}
+.hat {
+    max-width: 16rem;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    opacity: 0.6;    
+}
+
+.text_about p {
+    font-size: 1rem;
+}
+.text_about span {
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+.text_about span.azul-ML {
+    font-size: 4rem;
+}
+
+/* --Coffee Section-- */
+.the_coffee {
+    background-color: var(--bgLight);
+    color: var(--bgDark);
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.granos_cereza {
+    position: absolute;
+    opacity: 0.3;
+    width: 25rem;
+    top: -4%;
+    left: -16%;
+    transform: rotate(90deg);
+}
+img.coffee_bags {
+    max-width: 45rem;   
+    z-index: 10;
+    padding-top: 3rem; 
+}
+div.coffee figure.flex {
+    align-items: center;
+}
+div.text_coffee {
+    padding: 2rem 0;
+}
+
+.text_title_2, .text_subtitle_2 {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+.coffee_pillar {
+    color: var(--bgLight);
+    background-image: url('../img/bg_dark_texture.jpg');
+    background-repeat: repeat;
+    padding: 2rem;    
+    mask-image: url('../img/box-mask.png');
+    mask-size: 100% 100%;
+    -webkit-mask-image: url('../img/box-mask.png');
+    -webkit-mask-size: 100% 100%;
+}
+.coffee_pillar div.media {
+    align-items: center;
+}
+.text_title_4 {
+    font-size: 1.4rem;
+}
+.coffee_pillar p {
+    font-size: 0.8rem;
+}
+.coffee_pillar span.number_box {
+    font-size: 7rem;
+    font-family: 'Caveat Brush', cursive;
+}
+div.btn_group {
+    text-align: center;
+}
+div.btn_group a{
+    margin: 0.5rem;
+}
+
+/* -------Contact Section-------- */
+.contact {
+    background-image: url('../img/bg_dark_texture.jpg');
+    background-repeat: repeat;
+    padding: 2rem 0;
+    position: relative;
+}
+.text_subtitle_3 {
+    font-size: 1.6rem;
+}
+.granos_tostado {
+    position: absolute;
+    bottom: 0;
+    right: -2%;
+    width: 12.5rem;
+    opacity: 0.6;
+}
+#home_contact .control {
+    margin-bottom: 1rem;
+}
+#home_contact .control input::placeholder,
+#home_contact .control textarea::placeholder {
+    color: lightgray;
+    font-size: 1rem;
+    font-weight: 100;
+}
+#home_contact .control input::-webkit-input-placeholder,
+#home_contact .control textarea::-webkit-input-placeholder {
+    color: lightgray;
+    font-size: 1rem;
+    font-weight: 100;
+}
+#home_contact .control input::-moz-placeholder,
+#home_contact .control textarea::-moz-placeholder {
+    color: lightgray;
+    font-size: 1rem;
+    font-weight: 100;
+}
+#home_contact div.control input,
+#home_contact div.control textarea {
+    background-color: transparent;
+    color: white;
+}
+
+/*---------Footer---------*/
+footer {
+    background-color: var(--bgDark);
+    padding: 1rem;
+    text-align: center;
+}
+.social_icon {
+    margin-bottom: 1rem; 
+}
+.social_icon a {
+    margin: 0 1rem;
+}
+.info p {
+    margin-bottom: 0px;
+}
+.info a {
+    color: var(--azulML);
+}
+
+/* *********ABOUT US PAGE********* */
+/* ---------Home Section--------- */
+.header_about_us {
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgDark);
+    background-image: url('../img/bg_dark_texture.jpg');
+    background-repeat: repeat;
+}
+.home_about_us {
+    background-color: var(--bgLight);
+    color: var(--bgDark);
+    padding: 2rem 0;
+    position: relative;    
+}
+.header_about_us span.text_subtitle_3 {
+    line-height: 1;
+}
+
+.escultura img {
+    height: 20rem;
+    position: absolute;
+    top: -20%;
+    left: -5%;
+}
+.home_about_us p {
+    font-size: 0.9rem;
+}
+.about_photo img {
+    border: 2px rgb(94, 94, 94) solid;
+    padding: 10px;
+}
+/* ******************************* */
+/* *********ACOFFEE PAGE********* */
+/* ---------Home Section--------- */
+
+#finca_alemania {
+    min-height: 100vh;
+    background-color: var(--bgCoral);
+}
+#finca_alemania .info_finca{
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/secadero_de_cafe.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 100vh;
+}
+.text_finca {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+}
+.text_finca p {
+    font-size: 0.9rem;
+}
+.empaque_individual img {
+    max-height: 40rem;
+}
+.perfil {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+/* ******************************* */
+
+/*----------Responsive---------*/
+@media (max-width: 48rem) {
+
+    /* --Navbar-- */    
+    nav.navbar {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .menu_mobile {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    nav .container.big {
+        height: auto;
+    }
+    .navbar-item span.cursive {
+        display: block;
+    }
+    
+    /* --Main Section-- */
+    .home_main_text>h2 {
+        font-size: 2.5rem;
+    }
+    .text_title_1 {
+        font-size: 1.2rem;
+    }
+    .scroll_icon {
+        margin-bottom: 4rem;        
+    }
+
+    /* --About Section-- */
+    .w_7 {
+        max-width: 90%;        
+    }
+    .text_about span {
+        font-size: 2rem;
+    }
+    .text_about span.azul-ML {
+        font-size: 2.2rem;
+    }
+    .hat {
+        top: -5%;
+        left: -10%;
+    }
+
+    /* --Coffee Section-- */
+    .granos_cereza {
+        position: absolute;
+        opacity: 0.3;
+        width: 15rem;
+        top: -2%;         
+    }
+    img.coffee_bags {
+        max-width: 30rem;
+    }
+    div.text_coffee {
+        padding: 2rem;
+    }
+    .coffee_pillar {
+        max-width: 90%;
+        margin: auto;
+    }
+    /* --Contact Section-- */
+    .contact div.column {
+        padding: 1.5rem;
+    }
+
+    /* *********ABOUT US PAGE********* */
+    /* ---------Home Section--------- */
+    .escultura img {        
+        top: -10%;
+        left: -15%;
+    }
+    .home_about_us div.column {
+        padding: 2rem;
+    }
+    .header_about_us {
+        height: 15rem;
+    }
+    /* ******************************* */
+     /* *********COFFEE PAGE********* */
+     /* ---------Home Section--------- */
+     
+
+     /* ******************************* */
+}
+
+@media (max-width: 62rem) and (orientation: landscape) {
+
+    /* 992px */
+
+}
+
+@media (min-width: 62rem) {}
